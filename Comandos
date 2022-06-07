@@ -1,0 +1,25 @@
+1. Clonar el repositorio:
+-  git clone https://github.com/karengv1997/microservicios_comics.git
+
+2. Entrar a la carpeta "users" dentro del repositorio.
+
+3. Armar las imagenes
+-  docker-compose build
+
+4. Levantar la imagen
+-  docker-compose up
+
+El servicio estara corriendo en http://0.0.0.0:8000/users
+
+5. Salir de 'users" y entrar a la carpeta "comics" dentro del repositorio.
+
+6. Armar las imagenes
+-  docker-compose build
+
+7. Levantar la imagen
+-  docker-compose up
+
+El servicio estara corriendo en http://0.0.0.0:8888/searchComics y mostrara tanto comics como personajes. 
+Si se quiere filtrar, se agrega al url "/comics" o "/personajes", dependiendo del caso. 
+Si se quiere buscar un comic, se agrega el filtro de comics y se busca el titulo.
+Si se quiere buscar un personaje, se agrega el filtro de personajes y se busca el nombre.
